@@ -1,8 +1,8 @@
 # Setting the Course, but Forgetting to Steer: Analyzing Compliance with GDPR's Right of Access to Data by Instagram, TikTok, and YouTube
 
-Accepted at IEEE S&P 2026.
+Accepted at **IEEE S&P 2026**.
 
-Sai Keerthana Karnam, Abhisek Dash, Antarish Das, Sepehr Mousavi, Stefan Bechtold, Krishna P. Gummadi, Animesh Mukherjee, Ingmar Weber, Savvas Zannettou. [[Arxiv]](https://arxiv.org/abs/2502.11208)
+Sai Keerthana Karnam^*, Abhisek Dash^*, Antariksh Das, Sepehr Mousavi, Stefan Bechtold, Krishna P. Gummadi, Animesh Mukherjee, Ingmar Weber, Savvas Zannettou. [[Arxiv]](https://arxiv.org/abs/2502.11208)
 
 ---
 ## Abstract
