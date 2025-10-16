@@ -13,3 +13,48 @@ To improve the comprehensibility, we propose and demonstrate a two-layered appro
 ![Pipeline](Pipeline.jpg)
 
 ---
+
+## Folder Structure
+
+```
+GDPR_Compliance/
+│
+├── SURVEYS/        # Contains all survey setups.
+│   ├── Survey(5)_Comprehensibility.pdf 
+│   ├── Survey(5)_DDPs_used.zip
+│   ├── Survey(6.1)_improved_DDPs_evaluation.pdf
+│   ├── Survey(6.2)_Instagram.pdf
+│   ├── Survey(6.2)_TikTok.pdf
+│   ├── Survey(6.2)_YouTube.pdf
+│
+├── PROMPTS/
+│   ├── LLM_Prompt_responses(6.1).pdf  # Include the Prompt and Responses from the LLM used for improving comprehensibility.
+│
+├── EXTENSION/   # Contains the source code for the browser extension developed as part of this project.
+│   ├── background.js
+│   ├── content.js
+│   ├── manifest.json
+│   └── ...
+│
+└── README.md
+```
+
+---
+
+## Citation
+
+```
+@misc{karnam2025settingcourseforgettingsteer,
+      title={Setting the Course, but Forgetting to Steer: Analyzing Compliance with GDPR's Right of Access to Data by Instagram, TikTok, and YouTube}, 
+      author={Sai Keerthana Karnam and Abhisek Dash and Sepehr Mousavi and Stefan Bechtold and Krishna P. Gummadi and Animesh Mukherjee and Ingmar Weber and Savvas Zannettou},
+      year={2025},
+      eprint={2502.11208},
+      archivePrefix={arXiv},
+      primaryClass={cs.CY},
+      url={https://arxiv.org/abs/2502.11208}, 
+}
+```
+
+## Contact
+
+For any questions or issues, please contact: [saikeerthana00@gmail.com](saikeerthana00@gmail.com), [adash@mpi-sws.org](adash@mpi-sws.org)
