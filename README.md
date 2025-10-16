@@ -2,7 +2,7 @@
 
 Accepted at IEEE S&P 2026.
 
-Sai Keerthana Karnam, Abhisek Dash, Antarish Das, Sepehr Mousavi, Stefan Bechtold, Krishna P. Gummadi, Animesh Mukherjee, Ingmar Weber, Savvas Zannettou. [Arxiv](https://arxiv.org/abs/2502.11208)
+Sai Keerthana Karnam, Abhisek Dash, Antarish Das, Sepehr Mousavi, Stefan Bechtold, Krishna P. Gummadi, Animesh Mukherjee, Ingmar Weber, Savvas Zannettou. [[Arxiv]](https://arxiv.org/abs/2502.11208)
 
 ---
 ## Abstract
