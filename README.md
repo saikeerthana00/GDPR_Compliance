@@ -2,7 +2,7 @@
 
 Accepted at **IEEE S&P 2026**.
 
-Sai Keerthana Karnam, Abhisek Dash, Antariksh Das, Sepehr Mousavi, Stefan Bechtold, Krishna P. Gummadi, Animesh Mukherjee, Ingmar Weber, Savvas Zannettou. [[Arxiv]](https://arxiv.org/abs/2502.11208)
+Sai Keerthana Karnam*, Abhisek Dash*, Antariksh Das, Sepehr Mousavi, Stefan Bechtold, Krishna P. Gummadi, Animesh Mukherjee, Ingmar Weber, Savvas Zannettou. [[Arxiv]](https://arxiv.org/abs/2502.11208)
 
 ---
 ## Abstract
@@ -39,7 +39,9 @@ GDPR_Compliance/
 │
 └── README.md
 ```
-
+As part of this project, we built an extension to improve the comprehensibility of the DDPs.  
+- **Extension code:** `EXTENSION` folder  
+- **YouTube dashboard:** [Link](https://staging.d3h1wx5f2pab5i.amplifyapp.com/)
 ---
 
 ## Citation
