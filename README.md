@@ -11,7 +11,7 @@ The GDPR's Right of Access aims to empower users with control over their persona
 To improve the comprehensibility, we propose and demonstrate a two-layered approach by: (1) enhancing the data representation itself using stakeholder interpretations; and (2) incorporating a user-friendly extension *Know Your Data* for intuitive data visualization where users can control the level of transparency they prefer. Our findings underscore the need for clearer and non-conflicting regulatory guidance, stricter enforcement, and platform commitment to realize the goal of GDPR's Right of Access.
 
 ![Pipeline](Pipeline.jpg)
-*Pipeline to evaluate comprehensibility and reliability of the implementation of Article 15(3) of the GDPR.*
+**Figure 1 : Pipeline to evaluate comprehensibility and reliability of the implementation of Article 15(3) of the GDPR**.
 
 ---
 
