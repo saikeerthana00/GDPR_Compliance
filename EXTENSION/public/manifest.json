@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Know Your Data",
+    "version": "1.0.0",
+    "description": "Know Your Data - Analysis of GDPR data exports",
+    "action": {
+      "default_popup" : "index.html"
+    },
+    "background" : {
+      "service_worker" : "background.js"
+    },
+    "permissions": [
+    "tabs",
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+   "host_permissions": ["https://accountscenter.instagram.com/info_and_permissions/dyi"]
+  }
