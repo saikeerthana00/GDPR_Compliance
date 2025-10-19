@@ -63,12 +63,9 @@ Your React app should now be loaded as a Chrome extension!
 
 1. **Log in** to your respective account and make sure you are on the **correct page** as directed in the extension. 
    Refer to the figure below for guidance.
-
    ![Request and Download option](Images/request.png)
-
 2. **Click the “Request Data” button.**  
    Do **not** click anything else unless prompted by the extension or if authentication is required.
-
 3. Once your data request is complete, follow the **same process** for **downloading** the data.
 
 ---
@@ -78,11 +75,11 @@ Your React app should now be loaded as a Chrome extension!
 1. After downloading, locate the **DDP (Data Download Package)** file — this will be a `.zip` file.  
 2. Click on the **“View Dashboard”** button in the extension interface.  
 3. **Upload the downloaded `.zip` file** as shown in the figure below.
-
    ![Upload DDP File](Images/Upload_ddp.png)
-
 4. The dashboard will automatically process and visualize your data as shown below for the YouTube browsing history.
-
    ![Dashboard View](Images/dashboard_view.png)
 
+**Figure : ① shows how YouTube currently shares watch history. ② illustrates how our approach addresses some of the
+transparency expectations of our survey participants. ③, ④, and ⑤ depict our proposed concise, raw data, and transparent
+views respectively.**
 
