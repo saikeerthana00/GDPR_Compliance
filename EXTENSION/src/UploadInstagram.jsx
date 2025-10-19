@@ -44,7 +44,7 @@ import {
 } from "recharts";
 import { motion } from "framer-motion";
 import "./App_main.css";
-import Sidebar from "./Sidebar";
+import Sidebar from "./SidebarInstagram";
 import { HiMenuAlt2 } from "react-icons/hi";
 import DataCard from "./components/DataCard";
 import TransarentTab from "./TransparentTabBrowsing";
@@ -1443,7 +1443,7 @@ const LocationHistoryCard = ({ report, onBack }) => {
           className="text-center mb-10"
         >
           <h2 className="text-4xl font-bold text-gray-800 mb-3">
-            Location History
+            Login History
           </h2>
           <button
             onClick={onBack}
@@ -1552,7 +1552,7 @@ const LocationHistoryCard = ({ report, onBack }) => {
                 />
                 {!logins.length && (
                   <div className="text-red-600 mt-4">
-                    No location history available.
+                    No login history available.
                   </div>
                 )}
                 {stats.frequentLocations.length > 0 && (
@@ -2040,7 +2040,7 @@ const UploadInstagram = () => {
                   <Comments report={report} onBack={handleBack} />
                 ) : activeCard === "Browsing History" ? (
                   <BrowsingHistoryCard report={report} onBack={handleBack} />
-                ) : activeCard === "Location Information" ? (
+                ) : activeCard === "Login Information" ? (
                   <LocationHistoryCard report={report} onBack={handleBack} />
                 ) : activeCard === "Search History" ? (
                   <InstagramSearchHistory report={report} onBack={handleBack} />
@@ -2048,40 +2048,40 @@ const UploadInstagram = () => {
                   <div className="grid grid-cols-3 justify-center gap-4">
                   <DataCard
                     title="Browsing History"
-                    description="Records of pages you open inside Instagram’s in-app browser and visits to websites that use Meta technologies."
-                    whyCollectedAnswer="To personalize ads and content, improve recommendations, detect fraud, and measure services. More about this can be found <a href='https://privacycenter.instagram.com/policy#how-we-use-information' class='text-blue-600 underline' target='_blank' rel='noopener noreferrer'>here</a>."
-                    sharedWithAnswer="Shared with Meta systems and may be provided to partners/advertisers for measurement and personalization. See details <a href='https://privacycenter.instagram.com/policy#how-information-is-shared' class='text-blue-600 underline' target='_blank' rel='noopener noreferrer'>here</a>."
-                    howToControlAnswer="You can clear in-app browser data and manage off-Meta activity via Accounts Center. Learn more <a href='https://privacycenter.instagram.com/policy#how-to-control' class='text-blue-600 underline' target='_blank' rel='noopener noreferrer'>here</a>."
-                    howLongStoredAnswer="Kept as long as needed for service purposes unless you delete it. Retention policy explained <a href='https://privacycenter.instagram.com/policy#data-retention' class='text-blue-600 underline' target='_blank' rel='noopener noreferrer'>here</a>."
+                    description="Posts, Stories, Reels, or profiles you viewed while logged into Instagram."
+                    whyCollectedAnswer="To personalize your feed and recommendations based on what you see."
+                    sharedWithAnswer="Your raw viewing data is private. Instagram states that it may share analytic or aggregated information with third parties (e.g. advertisers). See more <a href='https://privacycenter.instagram.com/policy/?section_id=2-HowDoWeUse' class='text-blue-600 underline' target='_blank' rel='noopener noreferrer'>here</a>."
+                    howToControlAnswer="Instagram does not provide any option to clear your browsing history."
+                    howLongStoredAnswer="Instagram usually keeps the record of you browsing history upto 2 weeks."
                     onTitleClick={handleTitleClick}
                   />
 
                   <DataCard
                     title="Search History"
                     description="Your recent searches on Instagram (people, hashtags, places)."
-                    whyCollectedAnswer="To improve content discovery and personalize recommendations. See more <a href='https://privacycenter.instagram.com/policy#how-we-use-information' class='text-blue-600 underline' target='_blank' rel='noopener noreferrer'>here</a>."
-                    sharedWithAnswer="Stored in Meta’s systems for personalization. See how it may be shared <a href='https://privacycenter.instagram.com/policy#how-information-is-shared' class='text-blue-600 underline' target='_blank' rel='noopener noreferrer'>here</a>."
-                    howToControlAnswer="You can clear or pause search history in Settings. Instructions <a href='https://help.instagram.com/460411108811350' class='text-blue-600 underline' target='_blank' rel='noopener noreferrer'>here</a>."
-                    howLongStoredAnswer="Retained until you clear it or per Meta’s retention policies. Explained <a href='https://privacycenter.instagram.com/policy#data-retention' class='text-blue-600 underline' target='_blank' rel='noopener noreferrer'>here</a>."
+                    whyCollectedAnswer="To improve content discovery and personalize recommendations."
+                    sharedWithAnswer="Shared with the Meta services."
+                    howToControlAnswer="You can clear search history in Settings. Refer <a href='https://accountscenter.instagram.com/info_and_permissions/search_history/?entrypoint=accounts_center' class='text-blue-600 underline' target='_blank' rel='noopener noreferrer'>this</a>."
+                    howLongStoredAnswer="Retained until you clear it or per Meta’s retention policies or for 30 days. For more information visit <a href='https://www.facebook.com/help/instagram/155833707900388/' class='text-blue-600 underline' target='_blank' rel='noopener noreferrer'>here</a>."
                     onTitleClick={handleTitleClick}
                   />
 
                   <DataCard
-                    title="Location Information"
-                    description="Precise location if you enable it, plus inferred location from IP/Wi-Fi and photo metadata."
-                    whyCollectedAnswer="To provide relevant content, ads, and safety features. Details <a href='https://privacycenter.instagram.com/policy#how-we-use-information' class='text-blue-600 underline' target='_blank' rel='noopener noreferrer'>here</a>."
-                    sharedWithAnswer="Shared with Meta services and may be visible to others if you tag a location. See more <a href='https://privacycenter.instagram.com/policy#how-information-is-shared' class='text-blue-600 underline' target='_blank' rel='noopener noreferrer'>here</a>."
-                    howToControlAnswer="Manage location permissions in your device or in Accounts Center. Controls explained <a href='https://privacycenter.instagram.com/policy#how-to-control' class='text-blue-600 underline' target='_blank' rel='noopener noreferrer'>here</a>."
-                    howLongStoredAnswer="Location data is retained as long as necessary for features, or until you remove it. Retention explained <a href='https://privacycenter.instagram.com/policy#data-retention' class='text-blue-600 underline' target='_blank' rel='noopener noreferrer'>here</a>."
+                    title="Login Information"
+                    description="Precise location if you enable it, plus inferred location from IP/Wi-Fi where your login to instagram is done. Also included device information."
+                    whyCollectedAnswer="To provide, personalise, operate and improve our Products, and for safety and security purposes. To know more click <a href='https://accountscenter.instagram.com/info_and_permissions/search_history/?entrypoint=accounts_center' class='text-blue-600 underline' target='_blank' rel='noopener noreferrer'>this</a>."
+                    sharedWithAnswer="Shared with Meta services and may be your location will be visible to others if you tag a location. See more <a href='https://privacycenter.instagram.com/policy#how-information-is-shared' class='text-blue-600 underline' target='_blank' rel='noopener noreferrer'>here</a>."
+                    howToControlAnswer="Manage location and other permissons in your device."
+                    howLongStoredAnswer="Login data is retained as long as necessary for features."
                     onTitleClick={handleTitleClick}
                   />
 
                   <DataCard
                     title="Off Platform Activity"
                     description="Information about your activity on other apps and websites that use Meta technologies."
-                    whyCollectedAnswer="To measure ads, personalize experiences, and improve Meta products. More <a href='https://privacycenter.instagram.com/policy#how-we-use-information' class='text-blue-600 underline' target='_blank' rel='noopener noreferrer'>here</a>."
-                    sharedWithAnswer="Used within Meta’s systems and may be shared with advertisers/partners. Explained <a href='https://privacycenter.instagram.com/policy#how-information-is-shared' class='text-blue-600 underline' target='_blank' rel='noopener noreferrer'>here</a>."
-                    howToControlAnswer="You can manage and disconnect off-Meta activity in Accounts Center. Guide <a href='https://www.facebook.com/help/2207256696182627' class='text-blue-600 underline' target='_blank' rel='noopener noreferrer'>here</a>."
+                    whyCollectedAnswer="Activity from other businesses and organisations (apps, websites) is connected to your Facebook/Instagram account so that Meta can “provide, personalise and improve its Products and services” and show you relevant ads"
+                    sharedWithAnswer="Meta is receiving information from external apps/websites and linking it to your Meta account for ad-personalisation and analytics."
+                    howToControlAnswer="You can go to Settings → Accounts Centre → “Your activity off Meta technologies” (on Facebook or Instagram), and choose “Manage Future Activity” to disconnect future off-Meta activity or clear past activity."
                     howLongStoredAnswer="Retained according to Meta’s retention rules unless you clear it. Policy <a href='https://privacycenter.instagram.com/policy#data-retention' class='text-blue-600 underline' target='_blank' rel='noopener noreferrer'>here</a>."
                     onTitleClick={handleTitleClick}
                   />
@@ -2089,10 +2089,10 @@ const UploadInstagram = () => {
                   <DataCard
                     title="Comments"
                     description="Text and metadata of comments you post on Instagram."
-                    whyCollectedAnswer="To enable engagement, enforce community standards, and personalize your experience. See more <a href='https://privacycenter.instagram.com/policy#how-we-use-information' class='text-blue-600 underline' target='_blank' rel='noopener noreferrer'>here</a>."
-                    sharedWithAnswer="Visible to others based on the post’s visibility and stored in Meta’s systems. See sharing policy <a href='https://privacycenter.instagram.com/policy#how-information-is-shared' class='text-blue-600 underline' target='_blank' rel='noopener noreferrer'>here</a>."
-                    howToControlAnswer="You can delete or hide comments, or turn off comments on posts. Guide <a href='https://help.instagram.com/289098941190483' class='text-blue-600 underline' target='_blank' rel='noopener noreferrer'>here</a>."
-                    howLongStoredAnswer="Kept until you delete them or per retention rules. Retention info <a href='https://privacycenter.instagram.com/policy#data-retention' class='text-blue-600 underline' target='_blank' rel='noopener noreferrer'>here</a>."
+                    whyCollectedAnswer="To provide and personalise the Products, improve the experience, and for safety and security"
+                    sharedWithAnswer="Comments may be shared across Meta Companies"
+                    howToControlAnswer="You can control content visibility (e.g., who sees your posts/comments) and you can manage or delete your content; you can also delete your comments or limit follower visibility. View <a href='https://www.facebook.com/help/instagram/155833707900388/' class='text-blue-600 underline' target='_blank' rel='noopener noreferrer'>more</a>."
+                    howLongStoredAnswer="Kept until you delete them or per Meta's retention rules."
                     onTitleClick={handleTitleClick}
                   />
 

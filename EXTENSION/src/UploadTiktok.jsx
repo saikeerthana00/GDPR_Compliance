@@ -37,7 +37,7 @@ import {
   ChevronUp,
   ChevronDown,
 } from "lucide-react";
-import Sidebar from "./Sidebar";
+import Sidebar from "./SidebarTikTok";
 import { HiMenuAlt2 } from "react-icons/hi";
 import DataCard from "./components/DataCard";
 import SearchWordCloud from "./components/WordCloud";
@@ -2875,62 +2875,87 @@ const UploadTikTok = () => {
                   <FollowersCard userData={userData} onBack={handleBack} />
                 ) : activeCard === "Search History" ? (
                   <SearchCard userData={userData} onBack={handleBack} />
-                ) : activeCard === "Login Locations" ? (
+                ) : activeCard === "Login History" ? (
                   <LocationCard userData={userData} onBack={handleBack} />
                 ) : (
                   <div className="grid grid-cols-3 justify-center gap-4">
                     <DataCard
                       title="Browsing History"
                       description="Overview of watch activity"
-                      whyCollectedAnswer="Used to analyze your viewing patterns"
-                      sharedWithAnswer="N/A"
-                      howToControlAnswer="N/A"
-                      howLongStoredAnswer="N/A"
+                      whyCollectedAnswer="To improve your “For You” feed, content suggestions, ads, and overall experience, as well as to maintain safety and performance."
+                      sharedWithAnswer="Data may be shared with service providers; third-party platforms and partners integrated with TikTok; advertisers (in aggregate reports)measurement/data partners; TikTok’s Corporate Group. Know <a 
+                                                                                                                                                                                                              href='https://www.tiktok.com/legal/page/eea/privacy-policy/en' 
+                                                                                                                                                                                                              class='text-blue-600 underline'
+                                                                                                                                                                                                              target='_blank'
+                                                                                                                                                                                                              rel='noopener noreferrer'
+                                                                                                                                                                                                            > more.</a>"
+                      howToControlAnswer="TikTok doesn't provide option to clear the browsing history directly through the app/website."
+                      howLongStoredAnswer="TikTok usually retains the browsing history either for 3 months or 1.5 years or sometime even for a longer time."
                       onTitleClick={handleTitleClick}
                     />
                     <DataCard
                       title="Followers & Following"
                       description="Followers acquired and accounts you follow"
-                      whyCollectedAnswer="To monitor social connections"
-                      sharedWithAnswer="N/A"
-                      howToControlAnswer="N/A"
-                      howLongStoredAnswer="N/A"
+                      whyCollectedAnswer="TikTok collects information about “the accounts you follow and that follow you” to provide and administer the Platform, personalise features (e.g., recommendations/suggestions), support social interactions. Know <a 
+                                                                                                                                                                                                              href='https://www.tiktok.com/legal/page/eea/privacy-policy/en' 
+                                                                                                                                                                                                              class='text-blue-600 underline'
+                                                                                                                                                                                                              target='_blank'
+                                                                                                                                                                                                              rel='noopener noreferrer'
+                                                                                                                                                                                                            > more.</a>"
+                      sharedWithAnswer="Follower/following information can be visible to other users and the public depending on your settings."
+                      howToControlAnswer="You can use in-app privacy settings (e.g., account visibility and audience controls) to manage how follower/following information is shown"
+                      howLongStoredAnswer="Information is kept for as long as you have an account"
                       onTitleClick={handleTitleClick}
                     />
                     <DataCard
                       title="Search History"
                       description="Search terms used on TikTok"
-                      whyCollectedAnswer="To visualize your search interests"
-                      sharedWithAnswer="N/A"
-                      howToControlAnswer="N/A"
-                      howLongStoredAnswer="N/A"
+                      whyCollectedAnswer="To improve your “For You” feed, content suggestions, ads, and overall experience, as well as to maintain safety and performance."
+                      sharedWithAnswer="Data may be shared with service providers; third-party platforms and partners integrated with TikTok; advertisers (in aggregate reports)measurement/data partners; TikTok’s Corporate Group. Know <a 
+                                                                                                                                                                                                              href='https://www.tiktok.com/legal/page/eea/privacy-policy/en' 
+                                                                                                                                                                                                              class='text-blue-600 underline'
+                                                                                                                                                                                                              target='_blank'
+                                                                                                                                                                                                              rel='noopener noreferrer'
+                                                                                                                                                                                                            > more.</a>"
+                      howToControlAnswer="TikTok doesn't provide option to clear the search history directly through the app/website."
+                      howLongStoredAnswer="TikTok usually retains the browsing history either for 3 months or 1.5 years or sometime even for a longer time."
                       onTitleClick={handleTitleClick}
                     />
                     <DataCard
-                      title="Login Locations"
-                      description="Geographical locations of your logins"
-                      whyCollectedAnswer="To map login behavior"
-                      sharedWithAnswer="N/A"
-                      howToControlAnswer="N/A"
-                      howLongStoredAnswer="N/A"
+                      title="Login History"
+                      description="Location, device and network connection information when you access the Platform."
+                      whyCollectedAnswer="TikTok collects technical information such as device ID, IP address, and system details “to identify your activity across devices to give you a seamless log-in experience and for security purposes."
+                      sharedWithAnswer="Login-related information may be shared with service providers (for hosting, security, analytics), TikTok’s corporate group entities supporting global operations, and—when legally required—law enforcement or public authorities. Know <a 
+                                                                                                                                                                                                              href='https://www.tiktok.com/legal/page/eea/privacy-policy/en' 
+                                                                                                                                                                                                              class='text-blue-600 underline'
+                                                                                                                                                                                                              target='_blank'
+                                                                                                                                                                                                              rel='noopener noreferrer'
+                                                                                                                                                                                                            > more.</a>"
+                      howToControlAnswer="Manage permisssions in your device."
+                      howLongStoredAnswer="Information is kept for as long as you have an account"
                       onTitleClick={handleTitleClick}
                     />
                     <DataCard
                       title="Liked Posts"
                       description="Posts you liked on TikTok"
-                      whyCollectedAnswer="To list and review your likes"
-                      sharedWithAnswer="N/A"
-                      howToControlAnswer="N/A"
-                      howLongStoredAnswer="N/A"
+                      whyCollectedAnswer="To improve your “For You” feed, content suggestions, ads, and overall experience, as well as to maintain safety and performance."
+                      sharedWithAnswer="Your likes and engagement activity may be: Visible to other users and the public (depending on your account/privacy settings); Included in aggregate analytics reports for creators, advertisers, and partners..etc. Know <a 
+                                                                                                                                                                                                              href='https://www.tiktok.com/legal/page/eea/privacy-policy/en' 
+                                                                                                                                                                                                              class='text-blue-600 underline'
+                                                                                                                                                                                                              target='_blank'
+                                                                                                                                                                                                              rel='noopener noreferrer'
+                                                                                                                                                                                                            > more.</a>"
+                      howToControlAnswer="You can also delete likes manually."
+                      howLongStoredAnswer="TikTok retains like/interactions data as long as necessary to operate and personalise the Platform and to fulfil legal or business obligations."
                       onTitleClick={handleTitleClick}
                     />
                     <DataCard
                       title="Favourites"
                       description="Saved TikTok videos"
-                      whyCollectedAnswer="To analyze saved vs watched"
-                      sharedWithAnswer="N/A"
-                      howToControlAnswer="N/A"
-                      howLongStoredAnswer="N/A"
+                      whyCollectedAnswer="To improve your “For You” feed, content suggestions, ads, and overall experience, as well as to maintain safety and performance. Also, for you to keep track of favourite videos."
+                      sharedWithAnswer="Only visible to you and may be used by TikTok to provide better services."
+                      howToControlAnswer="You can also manually remove them from the favourites list."
+                      howLongStoredAnswer="TikTok retains favourites information as long as necessary to provide and personalise the Platform, comply with law, or pursue legitimate business purposes."
                       onTitleClick={handleTitleClick}
                     />
                   </div>

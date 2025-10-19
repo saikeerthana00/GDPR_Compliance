@@ -5,6 +5,7 @@ Accepted at **IEEE S&P 2026**.
 Sai Keerthana Karnam*, Abhisek Dash*, Antariksh Das, Sepehr Mousavi, Stefan Bechtold, Krishna P. Gummadi, Animesh Mukherjee, Ingmar Weber, Savvas Zannettou. [[Arxiv]](https://arxiv.org/abs/2502.11208)
 
 ---
+
 ## Abstract
 
 The GDPR's Right of Access aims to empower users with control over their personal data via Data Download Packages (DDPs). However, their effectiveness is often compromised by inconsistent platform implementations, questionable data reliability, and poor user comprehensibility. This paper conducts a comprehensive audit of DDPs from three social media platforms (TikTok, Instagram, and YouTube) to systematically assess these critical drawbacks. Despite offering similar services, we find that these platforms demonstrate significant inconsistencies in implementing the Right of Access, evident in varying levels of shared data. Critically, the failure to disclose processing purposes, retention periods, and other third-party data recipients serves as a further indicator of non-compliance. Our reliability evaluations, using bots and user-donated data, reveal that while TikTok's DDPs offer more consistent and complete data, others exhibit notable shortcomings. Similarly, our assessment of comprehensibility, based on surveys with 400 participants, indicates that current DDPs substantially fall short of GDPR's standards.
@@ -32,16 +33,15 @@ GDPR_Compliance/
 │   ├── LLM_Prompt_responses(6.1).pdf  # Include the Prompt and Responses from the LLM used for improving comprehensibility.
 │
 ├── EXTENSION/   # Contains the source code for the browser extension developed as part of this project.
-│   ├── background.js
-│   ├── content.js
-│   ├── manifest.json
-│   └── ...
 │
 └── README.md
 ```
-As part of this project, we built an extension to improve the comprehensibility of the DDPs.  
-- **Extension code:** `EXTENSION` folder  
+
+As part of this project, we built an extension to improve the comprehensibility of the DDPs.
+
+- **Extension code:** `EXTENSION` folder
 - **YouTube dashboard:** [Link](https://staging.d3h1wx5f2pab5i.amplifyapp.com/)
+
 ---
 
 ## Citation
